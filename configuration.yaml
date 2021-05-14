@@ -1,0 +1,23 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+mqtt:
+  broker: 172.19.0.2
+device_tracker:
+  - platform: luci
+    host: 192.168.1.5 
+    username: root
+    password: pwrcart
+    track_new_devices: true
+neato:
+  client_id: ac0b4bf948daa018412ea1a9a05e707190a0cbcd3825965107f6c95d3342e2b2
+  client_secret: fcd8d1dc464a6f9f6ad59811bc55497ded0b5326dcd98d2215328b2cccad9193

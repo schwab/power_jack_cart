@@ -1,0 +1,243 @@
+{
+    "version": 1,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "dc56dd334c55525d5c24427b81ab53ae"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "met"
+                    ]
+                ],
+                "manufacturer": "Met.no",
+                "model": "Forecast",
+                "name": "Forecast",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "164a268360ad19c1bf0405b43a541261",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "26426038eeb676edc884c180b1a81312"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "roku",
+                        "YN00JP597353"
+                    ]
+                ],
+                "manufacturer": "TCL",
+                "model": "50S423",
+                "name": "50\" TCL Roku TV",
+                "sw_version": "9.4.0",
+                "entry_type": null,
+                "id": "640daffd7aafaa1c8cefa6171ac86e74",
+                "via_device_id": null,
+                "area_id": "living_room",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "5425a16095697ad0ac828ec9307bb536"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "8645A3"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "TGWF115PRM",
+                "name": "Tasmota_01",
+                "sw_version": "9.4.0(tasmota)",
+                "entry_type": null,
+                "id": "8e5afd087d531788374020963690ec01",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": "sonoff_bdrm_01",
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "52ff8e5d393cb247f0b9c0cd3fb10ece"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "3c:61:05:e4:67:4a"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Tasmota",
+                "model": "Generic",
+                "name": "Tasmota",
+                "sw_version": "9.4.0",
+                "entry_type": null,
+                "id": "976acbcc740da4b290b902005cc589e1",
+                "via_device_id": null,
+                "area_id": "office",
+                "name_by_user": "Esp8266",
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "52ff8e5d393cb247f0b9c0cd3fb10ece"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "3c:61:05:e4:61:47"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Tasmota",
+                "model": "Generic",
+                "name": "pci_10k",
+                "sw_version": "9.1.0",
+                "entry_type": null,
+                "id": "47d828ca31a955c832dc829aa12b4326",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "afc465943aec4048d58e9bf2ba2aab0d"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "9ef4bffe6f010629"
+                    ]
+                ],
+                "manufacturer": "Google",
+                "model": "Pixel 2",
+                "name": "Pixel 2",
+                "sw_version": "30",
+                "entry_type": null,
+                "id": "ec0d031d43dd67225761d7505dbfdca4",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "1517d36b747d6c5ef2109b86350cc9b3"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "plex",
+                        "4e6bf75a5d381f48433c37abd745eb575119ebd3"
+                    ]
+                ],
+                "manufacturer": "Plex",
+                "model": "Plex Media Server",
+                "name": "tr001",
+                "sw_version": "1.14.1.5488-cc260c476",
+                "entry_type": null,
+                "id": "5d39c7f05daaa2a522297d62ea6943a2",
+                "via_device_id": null,
+                "area_id": "office",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7cb46d828131341a3c6730bc960ab96c"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "neato",
+                        "GPC16619-0479B76F4AF1"
+                    ]
+                ],
+                "manufacturer": "Panasonic",
+                "model": "BotVacD7Connected",
+                "name": "Neato",
+                "sw_version": "4.5.0-179",
+                "entry_type": null,
+                "id": "32d77ce2d881e242b9449f9d8f68de56",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "52ff8e5d393cb247f0b9c0cd3fb10ece"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "60:01:94:a9:f5:f7"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Tasmota",
+                "model": "Sonoff RF",
+                "name": "Tasmota_05",
+                "sw_version": "9.4.0",
+                "entry_type": null,
+                "id": "7dccc69b5ebd2ead6391958009bb1a29",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "52ff8e5d393cb247f0b9c0cd3fb10ece"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "e8:db:84:df:38:e7"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "Tasmota",
+                "model": "Generic",
+                "name": "power_cart_inverter",
+                "sw_version": "9.4.0",
+                "entry_type": null,
+                "id": "067610d50e4b8959c1a2907969d87ee6",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            }
+        ],
+        "deleted_devices": [
+            {
+                "config_entries": [
+                    "52ff8e5d393cb247f0b9c0cd3fb10ece"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:86:45:a3"
+                    ]
+                ],
+                "identifiers": [],
+                "id": "b71cfaea74f9d8d593e32735d0f8a8d5",
+                "orphaned_timestamp": null
+            }
+        ]
+    }
+}

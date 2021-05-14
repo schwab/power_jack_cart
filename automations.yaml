@@ -1,0 +1,63 @@
+- id: '1620107256161'
+  alias: ts1_toggle
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - event: cmd/tasmota_8645A3
+    event_data:
+      power: 'ON'
+  mode: single
+- id: '1620247019598'
+  alias: Turn off fan when I leave home
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: person.mcstar_home
+    to: not_home
+  - platform: state
+    entity_id: device_tracker.pixel_2
+    to: not_home
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 976acbcc740da4b290b902005cc589e1
+    entity_id: light.esp_power
+    domain: light
+  mode: single
+- id: '1620422798624'
+  alias: Turn On Humidifier
+  description: ''
+  trigger:
+  - platform: time_pattern
+    minutes: /35
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 8e5afd087d531788374020963690ec01
+    entity_id: switch.tasmota
+    domain: switch
+  mode: single
+- id: '1620425242585'
+  alias: Turn Off Humidifier
+  description: ''
+  trigger:
+  - platform: time_pattern
+    minutes: /3
+  condition:
+  - condition: device
+    type: is_on
+    device_id: 8e5afd087d531788374020963690ec01
+    entity_id: switch.tasmota
+    domain: switch
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+      milliseconds: 0
+  action:
+  - type: turn_off
+    device_id: 8e5afd087d531788374020963690ec01
+    entity_id: switch.tasmota
+    domain: switch
+  mode: single

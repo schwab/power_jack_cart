@@ -1,0 +1,72 @@
+version: '3'
+services:
+    homeassistant:
+        container_name: homeassistant
+        image: homeassistant/home-assistant:stable
+        volumes:
+        - /home/mcstar/project/home_assistant:/config
+        - /etc/localtime:/etc/localtime:ro
+        restart: unless-stopped
+        network_mode: host
+        depends_on:
+            - mariadb
+            - mosquitto
+        ports:
+            # Expose home-assistant port on host interface
+            - 8123:8123
+    mariadb:
+        image: linuxserver/mariadb
+        container_name: mariadb
+        restart: unless-stopped
+        environment:
+            MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+            MYSQL_DATABASE: ha_db
+            MYSQL_USER: homeassistant
+            MYSQL_PASSWORD: "HA_PASS"
+            PUID: 1000
+            PGID: 1000
+        volumes:
+        - ./mariadb:/config
+        ports:
+        - "3306:3306"
+    nodered:
+        container_name: nodered
+        image: nodered/node-red
+        ports:
+        - "1880:1880"
+        volumes:
+        - /home/mcstar/project/home_assistant/nodered:/data:rw
+        depends_on:
+        - homeassistant
+        - mosquitto
+        restart: unless-stopped
+    mosquitto:
+        image: eclipse-mosquitto
+        container_name: mosquitto
+        restart: unless-stopped
+        ports:
+        - "8883:8883"
+        - "8884:8884"
+        volumes:
+        - "/home/mcstar/project/home_assistant/mosquitto/config:/mosquitto/config"
+        - "/home/mcstar/project/home_assistant/mosquitto/data:/mosquitto/data"
+        - "/home/mcstar/project/home_assistant/mosquitto/log:/mosquitto/log"
+        - "/home/mcstar/project/home_assistant/mosquitto/config/:/var/run"
+        environment:
+        - TZ=US/Central
+        user: "${PUID}:${PGID}"
+        #allow_anonymous: true
+        #listener: 1883
+
+    hass-configurator:
+        image: "causticlab/hass-configurator-docker:x86_64"
+        container_name: hass-configurator
+        restart: unless-stopped
+        ports:
+            - "3218:3218/tcp"
+        depends_on:
+            - homeassistant
+        volumes:
+            - "/home/mcstar/project/home_assistant/hass/configurator-config:/config"
+            - "/home/mcstar/project/home_assistant/hass/hass-config:/hass-config"
+        user: "${PUID}:${PGID}"

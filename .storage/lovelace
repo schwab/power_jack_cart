@@ -1,0 +1,134 @@
+{
+    "version": 1,
+    "key": "lovelace",
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "path": "default_view",
+                    "title": "Home",
+                    "badges": [
+                        {
+                            "entity": "person.mcstar_home"
+                        }
+                    ],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "person.mcstar_home"
+                            ],
+                            "title": "Person"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "sun.sun"
+                            ],
+                            "title": "Sun"
+                        },
+                        {
+                            "type": "weather-forecast",
+                            "entity": "weather.home",
+                            "show_forecast": false
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "switch.tasmota",
+                                "sensor.tasmota_01_energy_apparentpower",
+                                "sensor.tasmota_01_energy_current",
+                                "sensor.tasmota_01_energy_factor",
+                                "sensor.tasmota_01_energy_power",
+                                "sensor.tasmota_01_energy_reactivepower",
+                                "sensor.tasmota_01_energy_today",
+                                "sensor.tasmota_01_energy_total",
+                                "sensor.tasmota_01_energy_totalstarttime",
+                                "sensor.tasmota_01_energy_voltage",
+                                "sensor.tasmota_01_energy_yesterday"
+                            ]
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "remote.50_tcl_roku_tv"
+                            ]
+                        },
+                        {
+                            "type": "media-control",
+                            "entity": "media_player.50_tcl_roku_tv"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "sensor.tasmota_ina219_current",
+                                "sensor.tasmota_ina219_id",
+                                "sensor.tasmota_ina219_power",
+                                "sensor.tasmota_ina219_voltage"
+                            ]
+                        },
+                        {
+                            "type": "light",
+                            "entity": "light.esp_power"
+                        },
+                        {
+                            "type": "glance",
+                            "entities": [
+                                "sensor.pixel_2_battery_level",
+                                "sensor.pixel_2_battery_state",
+                                "sensor.pixel_2_charger_type"
+                            ],
+                            "title": "Pixel 2"
+                        },
+                        {
+                            "type": "sensor",
+                            "entity": "sensor.tasmota_ina219_current",
+                            "graph": "line",
+                            "detail": 2,
+                            "hours_to_show": 12
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "vacuum.neato",
+                                "switch.neato_schedule"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Neato Control",
+                    "path": "neato-control",
+                    "badges": [
+                        {
+                            "entity": "vacuum.neato"
+                        },
+                        {
+                            "entity": "switch.neato_schedule"
+                        }
+                    ],
+                    "cards": [
+                        {
+                            "type": "gauge",
+                            "entity": "sensor.neato_battery",
+                            "min": 0,
+                            "max": 100
+                        },
+                        {
+                            "type": "button",
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "entity": "vacuum.neato"
+                        },
+                        {
+                            "type": "picture-entity",
+                            "entity": "camera.neato_cleaning_map"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

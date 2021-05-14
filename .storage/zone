@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "key": "zone",
+    "data": {
+        "items": [
+            {
+                "name": "neighborhood",
+                "icon": "mdi:map-marker",
+                "latitude": 29.759757034849784,
+                "longitude": -98.06987285304635,
+                "passive": false,
+                "radius": 232.6533465419035,
+                "id": "office"
+            },
+            {
+                "name": "david_home",
+                "icon": "mdi:map-marker",
+                "latitude": 29.747766282187108,
+                "longitude": -98.06934113397371,
+                "passive": false,
+                "radius": 196.92489522480673,
+                "id": "david_home"
+            },
+            {
+                "name": "heb",
+                "icon": "mdi:map-marker",
+                "latitude": 29.731707279305716,
+                "longitude": -98.07780245570066,
+                "passive": false,
+                "radius": 347.08141531187584,
+                "id": "heb"
+            }
+        ]
+    }
+}

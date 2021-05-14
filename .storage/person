@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "key": "person",
+    "data": {
+        "items": [
+            {
+                "name": "mcstar_home",
+                "user_id": "1eb2f60a3e444193b258aa84341e428a",
+                "device_trackers": [
+                    "device_tracker.pixel_2"
+                ],
+                "id": "mcstar_home",
+                "picture": null
+            }
+        ]
+    }
+}

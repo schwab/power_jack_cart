@@ -1,0 +1,210 @@
+{
+    "version": 1,
+    "key": "core.config_entries",
+    "data": {
+        "entries": [
+            {
+                "entry_id": "dc56dd334c55525d5c24427b81ab53ae",
+                "version": 1,
+                "domain": "met",
+                "title": "Home",
+                "data": {
+                    "track_home": true
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "onboarding",
+                "connection_class": "cloud_poll",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "4f46a1874ea0ac58196cc71899b0e014",
+                "version": 1,
+                "domain": "ifttt",
+                "title": "IFTTT Webhook",
+                "data": {
+                    "webhook_id": "079f4e36c31373982c0f72fccb1c153da38b0eac5adbcba05ffd8b19e6094752",
+                    "cloudhook": false
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "unknown",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "5425a16095697ad0ac828ec9307bb536",
+                "version": 1,
+                "domain": "mqtt",
+                "title": "172.19.0.2",
+                "data": {
+                    "broker": "172.19.0.3",
+                    "port": 8883,
+                    "username": "pi",
+                    "password": "pwrcart",
+                    "birth_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "online",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "will_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "offline",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "discovery": true
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_push",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "52ff8e5d393cb247f0b9c0cd3fb10ece",
+                "version": 1,
+                "domain": "tasmota",
+                "title": "Tasmota",
+                "data": {
+                    "discovery_prefix": "tasmota/discovery"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_push",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "26426038eeb676edc884c180b1a81312",
+                "version": 1,
+                "domain": "roku",
+                "title": "50\" TCL Roku TV",
+                "data": {
+                    "host": "192.168.1.67",
+                    "name": "50\" TCL Roku TV"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "ssdp",
+                "connection_class": "local_poll",
+                "unique_id": "YN00JP597353",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "017d135e1f7b168b7aa37422af5d0d35",
+                "version": 1,
+                "domain": "homekit_controller",
+                "title": "TCL 7130X 6464 via HomeKit Accessory Protocol",
+                "data": {},
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "ignore",
+                "connection_class": "local_push",
+                "unique_id": "39:bc:99:ac:4f:8a",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "afc465943aec4048d58e9bf2ba2aab0d",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "Pixel 2",
+                "data": {
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "2021.4.1-full (658)",
+                    "device_name": "Pixel 2",
+                    "manufacturer": "Google",
+                    "model": "Pixel 2",
+                    "os_name": "Android",
+                    "os_version": "30",
+                    "supports_encryption": false,
+                    "app_data": {
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+                        "push_token": "cTJZE2RjQF-XK8p-2ft53y:APA91bEAUmPhCUwFspOtlVZgDyzx3muREzEsbWstyiDAxMuddD39NKxFOpZySnKqG-v4AlaQx03ZfycE9SCMdyWy43Kp7qHIQAxH5GbJEOWgQkrRFzYMW_qNHpQ5t1yG_1D4YxNAwMt5"
+                    },
+                    "device_id": "9ef4bffe6f010629",
+                    "webhook_id": "0ba582ca3f1975f563ef2be12fe6663635422847c91b51edac46c8d0f0cf6fb0",
+                    "user_id": "1eb2f60a3e444193b258aa84341e428a"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "registration",
+                "connection_class": "cloud_push",
+                "unique_id": "io.homeassistant.companion.android-9ef4bffe6f010629",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "1517d36b747d6c5ef2109b86350cc9b3",
+                "version": 1,
+                "domain": "plex",
+                "title": "https://192-168-1-175.0e6e5b97cfdd4bc49fe95d2189eb3451.plex.direct:32400",
+                "data": {
+                    "server": "tr001",
+                    "server_id": "4e6bf75a5d381f48433c37abd745eb575119ebd3",
+                    "server_config": {
+                        "url": "https://192-168-1-175.0e6e5b97cfdd4bc49fe95d2189eb3451.plex.direct:32400",
+                        "client_id": "08ba285e-076c-4a46-b9c0-9ebbe6674470",
+                        "token": "-kpSEJwwa8FStJZfQB6k",
+                        "verify_ssl": true
+                    }
+                },
+                "options": {
+                    "media_player": {}
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_push",
+                "unique_id": "4e6bf75a5d381f48433c37abd745eb575119ebd3",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "7cb46d828131341a3c6730bc960ab96c",
+                "version": 1,
+                "domain": "neato",
+                "title": "Configuration.yaml",
+                "data": {
+                    "auth_implementation": "neato",
+                    "token": {
+                        "access_token": "d6f81f0c7cc7e72eb9ce806bee53c67a7c40950fea9aa1da328279bea2c98f3d",
+                        "token_type": "bearer",
+                        "expires_in": 14515200,
+                        "refresh_token": "ffee2425a54639455d8eb9759767898e120038a6703bc95b39b10ebdb88b9e34",
+                        "scope": "public_profile control_robots maps",
+                        "created_at": "2021-05-07T14:21:49Z",
+                        "expires_at": 1634912509.902095
+                    }
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": null,
+                "disabled_by": null
+            }
+        ]
+    }
+}

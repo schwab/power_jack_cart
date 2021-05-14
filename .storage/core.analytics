@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "key": "core.analytics",
+    "data": {
+        "preferences": {
+            "base": true,
+            "usage": true
+        },
+        "onboarded": true,
+        "uuid": "b67ccc4b9d0d4bba88f65e0f15029b57"
+    }
+}
